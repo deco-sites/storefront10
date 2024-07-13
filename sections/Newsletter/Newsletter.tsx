@@ -48,15 +48,19 @@ export function loader(props: Props) {
   return { ...props, status: undefined };
 }
 
-function Notice(
-  { title, description }: { title?: string; description?: string },
-) {
+function Notice({
+  title,
+  description,
+}: {
+  title?: string;
+  description?: string;
+}) {
   return (
-    <div class="flex flex-col justify-center items-center sm:items-start gap-4">
+    <div class="flex flex-col text-base-300 justify-center items-center sm:items-start gap-4">
       <span class="text-3xl font-semibold text-center sm:text-start">
         {title}
       </span>
-      <span class="text-sm font-normal text-base-400 text-center sm:text-start">
+      <span class="text-sm font-normal text-base-300 text-center sm:text-start">
         {description}
       </span>
     </div>
@@ -89,20 +93,18 @@ function Newsletter({
         <div class="p-14 flex flex-col sm:flex-row items-center justify-center gap-5 sm:gap-10">
           <Icon
             size={80}
-            class={clx(
-              status === "success" ? "text-success" : "text-error",
-            )}
+            class={clx(status === "success" ? "text-success" : "text-error")}
             id={status === "success" ? "check-circle" : "error"}
           />
-          <Notice {...status === "success" ? success : failed} />
+          <Notice {...(status === "success" ? success : failed)} />
         </div>
       </Section.Container>
     );
   }
 
   return (
-    <Section.Container class="bg-base-200">
-      <div class="p-14 grid grid-flow-row sm:grid-cols-2 gap-10 sm:gap-20 place-items-center">
+    <Section.Container class="bg-transparent">
+      <div class="text-primary p-14 grid grid-flow-row sm:grid-cols-2 gap-10 sm:gap-20 place-items-center">
         <Notice {...empty} />
 
         <form
@@ -113,19 +115,19 @@ function Newsletter({
         >
           <input
             name="email"
-            class="input input-bordered flex-grow"
+            class="bg-transparent text-primary border-black rounded-lg input input-bordered flex-grow"
             type="text"
             placeholder={placeholder}
           />
 
           <button
-            class="btn btn-primary"
+            class="bg-primary rounded-lg border-black text-base btn btn-primary"
             type="submit"
           >
-            <span class="[.htmx-request_&]:hidden inline">
+            <span class="[.htmx-request_&]:hidden inline border-black">
               {label}
             </span>
-            <span class="[.htmx-request_&]:inline hidden loading loading-spinner" />
+            <span class="[.htmx-request_&]:inline hidden loading loading-spinner border-black" />
           </button>
         </form>
       </div>

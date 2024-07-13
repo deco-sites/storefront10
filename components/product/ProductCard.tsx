@@ -56,7 +56,9 @@ function ProductCard({
 
   const item = mapProductToAnalyticsItem({ product, price, listPrice, index });
 
-  {/* Add click event to dataLayer */}
+  {
+    /* Add click event to dataLayer */
+  }
   const event = useSendEvent({
     on: "click",
     event: {
@@ -73,10 +75,7 @@ function ProductCard({
   const shoeSizeVariant = "shoe size";
 
   return (
-    <div
-      {...event}
-      class={clx("card card-compact group text-sm", _class)}
-    >
+    <div {...event} class={clx("card card-compact group text-sm", _class)}>
       <figure
         class={clx(
           "relative bg-base-200",
@@ -159,17 +158,15 @@ function ProductCard({
       </figure>
 
       <a href={relativeUrl} class="pt-5">
-        <span class="font-medium">
-          {title}
-        </span>
+        <span class="font-normal text-xl text-primary">{title}</span>
 
         <div class="flex gap-2 pt-2">
           {listPrice && (
-            <span class="line-through font-normal text-gray-400">
+            <span class="line-through font-normal text-primary">
               {formatPrice(listPrice, offers?.priceCurrency)}
             </span>
           )}
-          <span class="font-medium text-base-400">
+          <span class="font-medium text-primary">
             {formatPrice(price, offers?.priceCurrency)}
           </span>
         </div>
@@ -178,17 +175,22 @@ function ProductCard({
       {/* SKU Selector */}
       {variants.length > 1 && firstVariantName !== shoeSizeVariant && (
         <ul class="flex items-center justify-start gap-2 pt-4 pb-1 pl-1 overflow-x-auto">
-          {variants.map(([value, link]) => [value, relative(link)] as const)
+          {variants
+            .map(([value, link]) => [value, relative(link)] as const)
             .map(([value, link]) => (
               <li>
                 <a href={link} class="cursor-pointer">
                   <input
-                    class="hidden peer"
+                    class="hidden peer w-2"
                     type="radio"
                     name={`${id}-${firstSkuVariations[0]}`}
                     checked={link === relativeUrl}
                   />
-                  <Ring value={value} checked={link === relativeUrl} />
+                  <Ring
+                    class="w-6 h-6"
+                    value={value}
+                    checked={link === relativeUrl}
+                  />
                 </a>
               </li>
             ))}
@@ -207,7 +209,7 @@ function ProductCard({
                 "btn-outline justify-start border-none !text-sm !font-medium px-0 no-animation w-full",
                 "hover:!bg-transparent",
                 "disabled:!bg-transparent disabled:!opacity-50",
-                "btn-primary hover:!text-primary disabled:!text-primary",
+                "btn-success hover:!text-success disabled:!text-success",
               )}
             />
           )

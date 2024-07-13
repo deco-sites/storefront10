@@ -172,7 +172,7 @@
     "__resolveType": "site/sections/Images/ImageGallery.tsx"
   },
   "/.deco/blocks/pages-Landing%2520Page%2520(Woman)-585575.json": {
-    "name": "Landing Page (Women)",
+    "name": "Product Listing Page (Women)",
     "path": "/women",
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
@@ -193,12 +193,6 @@
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
   },
-  "/.deco/blocks/pages-Landing%2520Page%2520(Accessories)-260333.json": {
-    "name": "Landing Page (Accessories)",
-    "path": "/accessories",
-    "blockType": "pages",
-    "__resolveType": "website/pages/Page.tsx"
-  },
   "/.deco/blocks/pages-Landing%2520Page%2520(Home%2520%2526%2520Living)-726977.json": {
     "name": "Landing Page (Home & Living)",
     "path": "/home-and-living",
@@ -208,5 +202,29 @@
   "/.deco/blocks/023.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/Header/Header.tsx"
+  },
+  "/.deco/blocks/Preview%20%2Fsections%2FHeader%2FHeader.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Header/Header.tsx"
+  },
+  "/.deco/blocks/Preview%20%2Fsections%2FFooter%2FFooter.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Footer/Footer.tsx"
+  },
+  "/.deco/blocks/Preview%20site%2Floaders%2Ficons.ts.json": {
+    "blockType": "loaders",
+    "__resolveType": "site/loaders/icons.ts"
+  },
+  "/.deco/blocks/Main.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Theme/Theme.tsx"
+  },
+  "/.deco/blocks/Preview%20%2Fsections%2FProduct%2FProductShelf.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Product/ProductShelf.tsx"
+  },
+  "/.deco/blocks/Decloths.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Theme/Theme.tsx"
   }
 }

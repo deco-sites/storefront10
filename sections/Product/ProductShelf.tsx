@@ -26,7 +26,7 @@ export default function ProductShelf({ products, title, cta }: Props) {
           mapProductToAnalyticsItem({
             index,
             product,
-            ...(useOffer(product.offers)),
+            ...useOffer(product.offers),
           })
         ),
       },
@@ -36,9 +36,10 @@ export default function ProductShelf({ products, title, cta }: Props) {
   return (
     <Section.Container
       {...viewItemListEvent}
-      class="[view-transition-name:loading-fallback-2]"
+      class="[view-transition-name:loading-fallback-2] text-primary"
     >
       <Section.Header title={title} cta={cta} />
+      <p>Conforto e estilo na nossa coleção de roupas de inverno</p>
 
       <ProductSlider products={products} itemListName={title} />
     </Section.Container>
