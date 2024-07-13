@@ -33,7 +33,7 @@ export interface Logo {
 
 export interface SectionProps {
   alerts?: HTMLWidget[];
-
+//
   /**
    * @title Navigation items
    * @description Navigation items used both on mobile and desktop menus
