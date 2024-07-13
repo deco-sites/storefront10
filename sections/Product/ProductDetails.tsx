@@ -19,7 +19,7 @@ export default function ProductDetails({ page }: Props) {
         <div class="flex flex-col items-center justify-center gap-6">
           <span class="font-medium text-2xl">Page not found</span>
           <a href="/" class="btn no-animation">
-            Go back to Home
+            Voltar para Home
           </a>
         </div>
       </div>
@@ -34,7 +34,7 @@ export default function ProductDetails({ page }: Props) {
         class={clx(
           "container grid",
           "grid-cols-1 gap-2 py-0",
-          "sm:grid-cols-5 sm:gap-6",
+          "sm:grid-cols-5 sm:gap-6"
         )}
       >
         <div class="sm:col-span-3">

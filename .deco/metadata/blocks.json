@@ -194,8 +194,8 @@
     "__resolveType": "website/pages/Page.tsx"
   },
   "/.deco/blocks/pages-Landing%2520Page%2520(Home%2520%2526%2520Living)-726977.json": {
-    "name": "Landing Page (Home & Living)",
-    "path": "/home-and-living",
+    "name": "All Products",
+    "path": "/all-prod",
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
   },
@@ -238,5 +238,15 @@
   "/.deco/blocks/Preview%20%2Fsections%2FNewsletter%2FNewsletter.tsx.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/Newsletter/Newsletter.tsx"
+  },
+  "/.deco/blocks/CarouselCategories.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Images/Carousel.tsx"
+  },
+  "/.deco/blocks/pages-Conjuntos-228438.json": {
+    "name": "Conjuntos",
+    "path": "/sets",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
   }
 }

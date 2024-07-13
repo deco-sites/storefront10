@@ -46,7 +46,7 @@ function Footer({ links = [], policies = [], logo, trademark }: Props) {
 
           <ul class="grid grid-flow-row sm:grid-flow-col gap-6 ">
             {links.map(({ title, href, children }) => (
-              <li class="flex flex-col gap-4">
+              <li class="flex flex-col gap-4 pl-12">
                 <a class="text-base font-semibold" href={href}>
                   {title}
                 </a>
@@ -63,38 +63,6 @@ function Footer({ links = [], policies = [], logo, trademark }: Props) {
             ))}
           </ul>
         </div>
-        {
-          /* <div class="flex flex-col sm:flex-row gap-12 justify-between items-start sm:items-center">
-          <ul class="flex gap-4">
-            {social.map(({ image, href, alt }) => (
-              <li>
-                <a href={href}>
-                  <Image
-                    src={image}
-                    alt={alt}
-                    loading="lazy"
-                    width={24}
-                    height={24}
-                  />
-                </a>
-              </li>
-            ))}
-          </ul>
-          <ul class="flex flex-wrap gap-2">
-            {paymentMethods.map(({ image, alt }) => (
-              <li class="h-8 w-10 border border-base-100 rounded flex justify-center items-center">
-                <Image
-                  src={image}
-                  alt={alt}
-                  width={20}
-                  height={20}
-                  loading="lazy"
-                />
-              </li>
-            ))}
-          </ul>
-        </div> */
-        }
 
         <hr class="w-full text-base-400" />
 

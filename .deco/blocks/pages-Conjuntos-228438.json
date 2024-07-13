@@ -1,6 +1,5 @@
 {
-  "name": "All Products",
-  "path": "/all-prod",
+  "__resolveType": "website/pages/Page.tsx",
   "sections": [
     {
       "__resolveType": "Header"
@@ -19,7 +18,7 @@
           "desktop": 4
         },
         "variant": "aside",
-        "pagination": "show-more"
+        "pagination": "pagination"
       },
       "startingPage": 1
     },
@@ -30,8 +29,9 @@
       "__resolveType": "Footer"
     }
   ],
+  "name": "Conjuntos",
+  "path": "/sets",
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx"
-  },
-  "__resolveType": "website/pages/Page.tsx"
+  }
 }
