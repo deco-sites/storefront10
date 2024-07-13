@@ -57,9 +57,7 @@ const script = (formId: string, name: string, popupId: string) => {
 
     // Open Searchbar on meta+k
     if (e.metaKey === true && isK) {
-      const input = document.getElementById(popupId) as
-        | HTMLInputElement
-        | null;
+      const input = document.getElementById(popupId) as HTMLInputElement | null;
 
       if (input) {
         input.checked = true;
@@ -72,9 +70,10 @@ const script = (formId: string, name: string, popupId: string) => {
 
 const Suggestions = import.meta.resolve("./Suggestions.tsx");
 
-export default function Searchbar(
-  { placeholder = "What are you looking for?", loader }: SearchbarProps,
-) {
+export default function Searchbar({
+  placeholder = "What are you looking for?",
+  loader,
+}: SearchbarProps) {
   const slot = useId();
 
   return (
@@ -85,32 +84,36 @@ export default function Searchbar(
       <form id={SEARCHBAR_INPUT_FORM_ID} action={ACTION} class="join">
         <button
           type="submit"
-          class="btn join-item btn-square no-animation"
+          class="btn join-item btn-square no-animation input-bordered border-black"
           aria-label="Search"
           for={SEARCHBAR_INPUT_FORM_ID}
           tabIndex={-1}
         >
           <span class="loading loading-spinner loading-xs hidden [.htmx-request_&]:inline" />
-          <Icon id="search" class="inline [.htmx-request_&]:hidden" />
+          <Icon
+            id="search"
+            class="inline [.htmx-request_&]:hidden text-primary"
+          />
         </button>
         <input
           autoFocus
           tabIndex={0}
-          class="input input-bordered join-item flex-grow"
+          class="input input-bordered border-black join-item flex-grow"
           name={NAME}
           placeholder={placeholder}
           autocomplete="off"
           hx-target={`#${slot}`}
-          hx-post={loader && useComponent<SuggestionProps>(Suggestions, {
-            loader: asResolved(loader),
-          })}
+          hx-post={loader &&
+            useComponent<SuggestionProps>(Suggestions, {
+              loader: asResolved(loader),
+            })}
           hx-trigger={`input changed delay:300ms, ${NAME}`}
           hx-indicator={`#${SEARCHBAR_INPUT_FORM_ID}`}
           hx-swap="innerHTML"
         />
         <label
           type="button"
-          class="join-item btn btn-ghost btn-square hidden sm:inline-flex no-animation"
+          class="join-item btn btn-ghost btn-square hidden sm:inline-flex no-animation input-bordered border-black"
           for={SEARCHBAR_POPUP_ID}
           aria-label="Toggle searchbar"
         >

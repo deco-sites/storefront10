@@ -34,10 +34,13 @@ function Footer({ links = [], policies = [], logo, trademark }: Props) {
       style={{ backgroundColor: "#131313" }}
     >
       <div class="container flex flex-col gap-5 sm:gap-10 py-10">
-        <div class="flex justify-between items-center">
-          <div class="flex flex-nowrap items-center justify-between sm:justify-center gap-4">
+        <div class="flex justify-between">
+          <div class="flex flex-nowrap justify-between gap-4">
             <div>
               <img loading="lazy" src={logo} />
+              <p class="w-3/4 mt-10">
+                Your natural candle made for your home and for your wellness.
+              </p>
             </div>
           </div>
 

@@ -115,7 +115,7 @@ function Newsletter({
         >
           <input
             name="email"
-            class="bg-transparent text-primary border-black rounded-lg input input-bordered flex-grow"
+            class="bg-transparent text-primary border-black rounded-lg input input-bordered flex-grow focus:outline-none focus:border-black"
             type="text"
             placeholder={placeholder}
           />

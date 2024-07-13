@@ -75,7 +75,10 @@ function ProductCard({
   const shoeSizeVariant = "shoe size";
 
   return (
-    <div {...event} class={clx("card card-compact group text-sm", _class)}>
+    <div
+      {...event}
+      class={clx("card card-compact group text-sm shadow-lg", _class)}
+    >
       <figure
         class={clx(
           "relative bg-base-200",
@@ -157,7 +160,7 @@ function ProductCard({
         </div>
       </figure>
 
-      <a href={relativeUrl} class="pt-5">
+      <a href={relativeUrl} class="pt-5 pl-4">
         <span class="font-normal text-xl text-primary">{title}</span>
 
         <div class="flex gap-2 pt-2">
@@ -174,7 +177,7 @@ function ProductCard({
 
       {/* SKU Selector */}
       {variants.length > 1 && firstVariantName !== shoeSizeVariant && (
-        <ul class="flex items-center justify-start gap-2 pt-4 pb-1 pl-1 overflow-x-auto">
+        <ul class="flex items-center justify-start gap-2 pt-4 pb-1 pl-4 overflow-x-auto">
           {variants
             .map(([value, link]) => [value, relative(link)] as const)
             .map(([value, link]) => (
@@ -206,7 +209,7 @@ function ProductCard({
               item={item}
               class={clx(
                 "btn",
-                "btn-outline justify-start border-none !text-sm !font-medium px-0 no-animation w-full",
+                "btn-outline justify-start border-none !text-sm !font-medium px-0 no-animation w-full pl-4",
                 "hover:!bg-transparent",
                 "disabled:!bg-transparent disabled:!opacity-50",
                 "btn-success hover:!text-success disabled:!text-success",

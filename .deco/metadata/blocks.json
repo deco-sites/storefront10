@@ -226,5 +226,13 @@
   "/.deco/blocks/Decloths.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/Theme/Theme.tsx"
+  },
+  "/.deco/blocks/Preview%20site%2Fsections%2FImages%2FCarousel.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Images/Carousel.tsx"
+  },
+  "/.deco/blocks/Preview%20shopify%2Floaders%2Fcart.ts.json": {
+    "blockType": "loaders",
+    "__resolveType": "shopify/loaders/cart.ts"
   }
 }
