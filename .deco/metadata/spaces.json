@@ -711,7 +711,7 @@
             "content": [
               {
                 "type": "stack",
-                "width": 22.523613657160404,
+                "width": 33.333333333333336,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -732,7 +732,7 @@
               },
               {
                 "type": "stack",
-                "width": 26.197051497219142,
+                "width": 33.333333333333336,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -753,7 +753,7 @@
               },
               {
                 "type": "stack",
-                "width": 51.27933484562045,
+                "width": 33.33333333333333,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -1324,19 +1324,40 @@
             "content": [
               {
                 "type": "stack",
-                "width": 100,
+                "isClosable": true,
+                "reorderEnabled": true,
+                "title": "",
+                "width": 50,
+                "activeItemIndex": 0,
+                "content": [
+                  {
+                    "id": "Publish::Code::code::Code::%7B%22spaceId%22%3A%22%2Fconstants.ts%22%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-Publish::Code::code::Code::%7B%22spaceId%22%3A%22%2Fconstants.ts%22%7D\" />",
+                    "type": "component",
+                    "componentName": "component",
+                    "componentState": {
+                      "id": "Publish::Code::code::Code::%7B%22spaceId%22%3A%22%2Fconstants.ts%22%7D"
+                    },
+                    "isClosable": true,
+                    "reorderEnabled": true
+                  }
+                ]
+              },
+              {
+                "type": "stack",
+                "width": 50,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
                 "activeItemIndex": 0,
                 "content": [
                   {
-                    "id": "Publish::Environment::rocket-launch::Environment::%7B%7D",
-                    "title": "<div class=\"contents text-base-700\" id=\"header-Publish::Environment::rocket-launch::Environment::%7B%7D\" />",
+                    "id": "Publish::Code::code::Code::%7B%22spaceId%22%3A%22%2F.deco%2Fmetadata%2Fblocks.json%22%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-Publish::Code::code::Code::%7B%22spaceId%22%3A%22%2F.deco%2Fmetadata%2Fblocks.json%22%7D\" />",
                     "type": "component",
                     "componentName": "component",
                     "componentState": {
-                      "id": "Publish::Environment::rocket-launch::Environment::%7B%7D"
+                      "id": "Publish::Code::code::Code::%7B%22spaceId%22%3A%22%2F.deco%2Fmetadata%2Fblocks.json%22%7D"
                     },
                     "isClosable": true,
                     "reorderEnabled": true
@@ -1353,14 +1374,32 @@
         "maximisedItemId": null
       },
       "tabs": {
-        "Publish::Environment::rocket-launch::Environment::%7B%7D": {
-          "name": "Environment",
-          "icon": "rocket-launch",
+        "Publish::Code::code::Code::%7B%22spaceId%22%3A%22%2Fconstants.ts%22%7D": {
+          "name": "Code",
+          "icon": "code",
+          "accepts": "function",
           "render": "function",
-          "viewId": "Environment",
-          "id": "Publish::Environment::rocket-launch::Environment::%7B%7D",
+          "viewId": "Code",
+          "viewProps": {
+            "spaceId": "/constants.ts"
+          },
+          "id": "Publish::Code::code::Code::%7B%22spaceId%22%3A%22%2Fconstants.ts%22%7D",
           "state": {
             "__signal": null
+          }
+        },
+        "Publish::Code::code::Code::%7B%22spaceId%22%3A%22%2F.deco%2Fmetadata%2Fblocks.json%22%7D": {
+          "name": "Code",
+          "icon": "code",
+          "accepts": "function",
+          "render": "function",
+          "viewId": "Code",
+          "viewProps": {
+            "spaceId": "/.deco/metadata/blocks.json"
+          },
+          "id": "Publish::Code::code::Code::%7B%22spaceId%22%3A%22%2F.deco%2Fmetadata%2Fblocks.json%22%7D",
+          "state": {
+            "__signal": "error"
           }
         }
       }
@@ -1409,7 +1448,7 @@
             "content": [
               {
                 "type": "stack",
-                "width": 34.511041009463725,
+                "width": 41.66666666666667,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -1431,7 +1470,7 @@
               },
               {
                 "type": "stack",
-                "width": 65.48895899053629,
+                "width": 58.333333333333336,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -1653,29 +1692,7 @@
             "content": [
               {
                 "type": "stack",
-                "width": 41.66666666666667,
-                "isClosable": true,
-                "reorderEnabled": true,
-                "title": "",
-                "activeItemIndex": 0,
-                "content": [
-                  {
-                    "id": "%2F.deco%2Fblocks%2FHeader.json::Properties::list::Properties::%7B%7D",
-                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2FHeader.json::Properties::list::Properties::%7B%7D\" />",
-                    "type": "component",
-                    "componentName": "component",
-                    "componentState": {
-                      "id": "%2F.deco%2Fblocks%2FHeader.json::Properties::list::Properties::%7B%7D"
-                    },
-                    "width": 30,
-                    "isClosable": true,
-                    "reorderEnabled": true
-                  }
-                ]
-              },
-              {
-                "type": "stack",
-                "width": 58.333333333333336,
+                "width": 100,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -1689,7 +1706,6 @@
                     "componentState": {
                       "id": "%2F.deco%2Fblocks%2FHeader.json::Preview::visibility::Preview::%7B%7D"
                     },
-                    "width": 70,
                     "isClosable": true,
                     "reorderEnabled": true
                   }
@@ -1705,25 +1721,12 @@
         "maximisedItemId": null
       },
       "tabs": {
-        "%2F.deco%2Fblocks%2FHeader.json::Properties::list::Properties::%7B%7D": {
-          "name": "Properties",
-          "icon": "list",
-          "accepts": "function",
-          "render": "function",
-          "viewId": "Properties",
-          "width": 30,
-          "id": "%2F.deco%2Fblocks%2FHeader.json::Properties::list::Properties::%7B%7D",
-          "state": {
-            "__signal": null
-          }
-        },
         "%2F.deco%2Fblocks%2FHeader.json::Preview::visibility::Preview::%7B%7D": {
           "name": "Preview",
           "icon": "visibility",
           "accepts": "function",
           "render": "function",
           "viewId": "Preview",
-          "width": 70,
           "id": "%2F.deco%2Fblocks%2FHeader.json::Preview::visibility::Preview::%7B%7D",
           "state": {
             "__signal": null
@@ -1789,9 +1792,9 @@
                     "componentState": {
                       "id": "%2F.deco%2Fblocks%2FFooter.json::Properties::list::Properties::%7B%7D"
                     },
-                    "width": 30,
                     "isClosable": true,
-                    "reorderEnabled": true
+                    "reorderEnabled": true,
+                    "width": 30
                   }
                 ]
               },
@@ -1811,9 +1814,9 @@
                     "componentState": {
                       "id": "%2F.deco%2Fblocks%2FFooter.json::Preview::visibility::Preview::%7B%7D"
                     },
-                    "width": 70,
                     "isClosable": true,
-                    "reorderEnabled": true
+                    "reorderEnabled": true,
+                    "width": 70
                   }
                 ]
               }
@@ -1836,7 +1839,8 @@
           "width": 30,
           "id": "%2F.deco%2Fblocks%2FFooter.json::Properties::list::Properties::%7B%7D",
           "state": {
-            "__signal": null
+            "__signal": null,
+            "value": null
           }
         },
         "%2F.deco%2Fblocks%2FFooter.json::Preview::visibility::Preview::%7B%7D": {
@@ -1972,98 +1976,10 @@
       }
     },
     {
-      "id": "Space 71",
-      "name": "Space 71",
-      "pinned": false,
-      "icon": "square-rounded",
-      "layout": {
-        "settings": {
-          "hasHeaders": true,
-          "constrainDragToContainer": true,
-          "reorderEnabled": true,
-          "selectionEnabled": false,
-          "popoutWholeStack": false,
-          "blockedPopoutsThrowError": true,
-          "closePopoutsOnUnload": true,
-          "showPopoutIcon": false,
-          "showMaximiseIcon": false,
-          "showCloseIcon": false,
-          "responsiveMode": "onload"
-        },
-        "dimensions": {
-          "borderWidth": 8,
-          "minItemHeight": 10,
-          "minItemWidth": 10,
-          "headerHeight": 40,
-          "dragProxyWidth": 300,
-          "dragProxyHeight": 200
-        },
-        "labels": {
-          "close": "close",
-          "maximise": "maximise",
-          "minimise": "minimise",
-          "popout": "open in new window",
-          "popin": "pop in",
-          "tabDropdown": "additional tabs"
-        },
-        "content": [],
-        "isClosable": true,
-        "reorderEnabled": true,
-        "title": "",
-        "openPopouts": [],
-        "maximisedItemId": null
-      },
-      "tabs": {}
-    },
-    {
-      "id": "/.deco/blocks/Preview%20%2Fsections%2FImages%2FCarousel.tsx.json",
-      "name": "Preview /sections/Images/Carousel.tsx",
+      "id": "/.deco/blocks/Preview%20%2Fsections%2FFooter%2FFooter.tsx.json",
+      "name": "Preview /sections/Footer/Footer.tsx",
       "pinned": false,
       "icon": "block",
-      "layout": {
-        "settings": {
-          "hasHeaders": true,
-          "constrainDragToContainer": true,
-          "reorderEnabled": true,
-          "selectionEnabled": false,
-          "popoutWholeStack": false,
-          "blockedPopoutsThrowError": true,
-          "closePopoutsOnUnload": true,
-          "showPopoutIcon": false,
-          "showMaximiseIcon": false,
-          "showCloseIcon": false,
-          "responsiveMode": "onload"
-        },
-        "dimensions": {
-          "borderWidth": 8,
-          "minItemHeight": 10,
-          "minItemWidth": 10,
-          "headerHeight": 40,
-          "dragProxyWidth": 300,
-          "dragProxyHeight": 200
-        },
-        "labels": {
-          "close": "close",
-          "maximise": "maximise",
-          "minimise": "minimise",
-          "popout": "open in new window",
-          "popin": "pop in",
-          "tabDropdown": "additional tabs"
-        },
-        "content": [],
-        "isClosable": true,
-        "reorderEnabled": true,
-        "title": "",
-        "openPopouts": [],
-        "maximisedItemId": null
-      },
-      "tabs": {}
-    },
-    {
-      "id": "/.deco/blocks/pages-productpage-ce4850591828.json",
-      "name": "Product Page",
-      "pinned": false,
-      "icon": "file",
       "layout": {
         "settings": {
           "hasHeaders": true,
@@ -2103,21 +2019,20 @@
             "content": [
               {
                 "type": "stack",
-                "width": 41.66666666666667,
+                "width": 50,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
                 "activeItemIndex": 0,
                 "content": [
                   {
-                    "id": "%2F.deco%2Fblocks%2Fpages-productpage-ce4850591828.json::Properties::list::Properties::%7B%7D",
-                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2Fpages-productpage-ce4850591828.json::Properties::list::Properties::%7B%7D\" />",
+                    "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FFooter%252FFooter.tsx.json::Preview::visibility::Preview::%7B%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FFooter%252FFooter.tsx.json::Preview::visibility::Preview::%7B%7D\" />",
                     "type": "component",
                     "componentName": "component",
                     "componentState": {
-                      "id": "%2F.deco%2Fblocks%2Fpages-productpage-ce4850591828.json::Properties::list::Properties::%7B%7D"
+                      "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FFooter%252FFooter.tsx.json::Preview::visibility::Preview::%7B%7D"
                     },
-                    "width": 30,
                     "isClosable": true,
                     "reorderEnabled": true
                   }
@@ -2125,21 +2040,20 @@
               },
               {
                 "type": "stack",
-                "width": 58.333333333333336,
+                "width": 50,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
                 "activeItemIndex": 0,
                 "content": [
                   {
-                    "id": "%2F.deco%2Fblocks%2Fpages-productpage-ce4850591828.json::Preview::visibility::Preview::%7B%7D",
-                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2Fpages-productpage-ce4850591828.json::Preview::visibility::Preview::%7B%7D\" />",
+                    "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FFooter%252FFooter.tsx.json::Code::code::Code::%7B%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FFooter%252FFooter.tsx.json::Code::code::Code::%7B%7D\" />",
                     "type": "component",
                     "componentName": "component",
                     "componentState": {
-                      "id": "%2F.deco%2Fblocks%2Fpages-productpage-ce4850591828.json::Preview::visibility::Preview::%7B%7D"
+                      "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FFooter%252FFooter.tsx.json::Code::code::Code::%7B%7D"
                     },
-                    "width": 70,
                     "isClosable": true,
                     "reorderEnabled": true
                   }
@@ -2155,75 +2069,29 @@
         "maximisedItemId": null
       },
       "tabs": {
-        "%2F.deco%2Fblocks%2Fpages-productpage-ce4850591828.json::Properties::list::Properties::%7B%7D": {
-          "name": "Properties",
-          "icon": "list",
-          "accepts": "function",
-          "render": "function",
-          "viewId": "Properties",
-          "width": 30,
-          "id": "%2F.deco%2Fblocks%2Fpages-productpage-ce4850591828.json::Properties::list::Properties::%7B%7D",
-          "state": {
-            "__signal": null
-          }
-        },
-        "%2F.deco%2Fblocks%2Fpages-productpage-ce4850591828.json::Preview::visibility::Preview::%7B%7D": {
+        "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FFooter%252FFooter.tsx.json::Preview::visibility::Preview::%7B%7D": {
           "name": "Preview",
           "icon": "visibility",
           "accepts": "function",
           "render": "function",
           "viewId": "Preview",
-          "width": 70,
-          "id": "%2F.deco%2Fblocks%2Fpages-productpage-ce4850591828.json::Preview::visibility::Preview::%7B%7D",
+          "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FFooter%252FFooter.tsx.json::Preview::visibility::Preview::%7B%7D",
+          "state": {
+            "__signal": null
+          }
+        },
+        "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FFooter%252FFooter.tsx.json::Code::code::Code::%7B%7D": {
+          "name": "Code",
+          "icon": "code",
+          "accepts": "function",
+          "render": "function",
+          "viewId": "Code",
+          "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FFooter%252FFooter.tsx.json::Code::code::Code::%7B%7D",
           "state": {
             "__signal": null
           }
         }
       }
-    },
-    {
-      "id": "Space 52",
-      "name": "Space 52",
-      "pinned": false,
-      "icon": "square-rounded",
-      "layout": {
-        "settings": {
-          "hasHeaders": true,
-          "constrainDragToContainer": true,
-          "reorderEnabled": true,
-          "selectionEnabled": false,
-          "popoutWholeStack": false,
-          "blockedPopoutsThrowError": true,
-          "closePopoutsOnUnload": true,
-          "showPopoutIcon": false,
-          "showMaximiseIcon": false,
-          "showCloseIcon": false,
-          "responsiveMode": "onload"
-        },
-        "dimensions": {
-          "borderWidth": 8,
-          "minItemHeight": 10,
-          "minItemWidth": 10,
-          "headerHeight": 40,
-          "dragProxyWidth": 300,
-          "dragProxyHeight": 200
-        },
-        "labels": {
-          "close": "close",
-          "maximise": "maximise",
-          "minimise": "minimise",
-          "popout": "open in new window",
-          "popin": "pop in",
-          "tabDropdown": "additional tabs"
-        },
-        "content": [],
-        "isClosable": true,
-        "reorderEnabled": true,
-        "title": "",
-        "openPopouts": [],
-        "maximisedItemId": null
-      },
-      "tabs": {}
     }
   ]
 }

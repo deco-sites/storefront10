@@ -5,7 +5,7 @@ interface Item {
   title: string;
   href: string;
 }
-
+//
 /** @titleBy title */
 interface Link extends Item {
   children: Item[];
@@ -30,7 +30,7 @@ interface Props {
 function Footer({ links = [], policies = [], logo, trademark }: Props) {
   return (
     <footer
-      class="px-5 sm:px-0 mt-5 sm:mt-10"
+      class="px-5 sm:px-0 mt-2 sm:mt-2"
       style={{ backgroundColor: "#131313" }}
     >
       <div class="container flex flex-col gap-5 sm:gap-10 py-10">
