@@ -178,7 +178,10 @@ const Desktop = ({ navItems, logo, searchbar }: Props) => (
       <div class="flex justify-between items-center">
         <ul class="flex">
           {navItems?.slice(0, 10).map((item, i) => (
-            <NavItem item={item} i={i} />
+            <NavItem
+              item={item}
+              i={i}
+            />
           ))}
         </ul>
         <div>{/* ship to */}</div>
@@ -265,7 +268,8 @@ const Mobile = ({ logo, searchbar }: Props) => (
 function Header({
   alerts = [],
   logo = {
-    src: "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/986b61d4-3847-4867-93c8-b550cb459cc7",
+    src:
+      "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/986b61d4-3847-4867-93c8-b550cb459cc7",
     width: 100,
     height: 16,
     alt: "Logo",
@@ -282,11 +286,9 @@ function Header({
     >
       <div class="bg-base-100 fixed w-full z-40">
         {alerts.length > 0 && <Alert alerts={alerts} />}
-        {device === "desktop" ? (
-          <Desktop logo={logo} {...props} />
-        ) : (
-          <Mobile logo={logo} {...props} />
-        )}
+        {device === "desktop"
+          ? <Desktop logo={logo} {...props} />
+          : <Mobile logo={logo} {...props} />}
       </div>
     </header>
   );
