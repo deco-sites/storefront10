@@ -98,21 +98,47 @@ const Desktop = ({ navItems, logo, searchbar }: Props) => (
         >
           <div class="flex justify-between w-full">
             <span class="text-primary truncate inset-0">Procure itens...</span>
-            <svg
-              width="18"
-              height="17"
-              viewBox="0 0 18 17"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="cursor-pointer"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M6.41196 12.0999L1.92259 16.5892C1.59715 16.9147 1.06951 16.9147 0.744078 16.5892C0.418641 16.2638 0.418641 15.7362 0.744078 15.4107L5.23345 10.9214C4.3559 9.79246 3.83333 8.37392 3.83333 6.83332C3.83333 3.15142 6.8181 0.166656 10.5 0.166656C14.1819 0.166656 17.1667 3.15142 17.1667 6.83332C17.1667 10.5152 14.1819 13.5 10.5 13.5C8.95941 13.5 7.54087 12.9774 6.41196 12.0999ZM10.5 11.8333C13.2614 11.8333 15.5 9.59475 15.5 6.83332C15.5 4.0719 13.2614 1.83332 10.5 1.83332C7.73858 1.83332 5.5 4.0719 5.5 6.83332C5.5 9.59475 7.73858 11.8333 10.5 11.8333Z"
-                fill="#131313"
-              />
-            </svg>
+            <div class="flex items-center gap-2" style={{ marginLeft: '10px' }}>
+              <svg
+                width="16"
+                height="15"
+                viewBox="0 0 18 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="cursor-pointer"
+                style={{ marginLeft: '10px', strokeWidth: '1' }}
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M6.41196 12.0999L1.92259 16.5892C1.59715 16.9147 1.06951 16.9147 0.744078 16.5892C0.418641 16.2638 0.418641 15.7362 0.744078 15.4107L5.23345 10.9214C4.3559 9.79246 3.83333 8.37392 3.83333 6.83332C3.83333 3.15142 6.8181 0.166656 10.5 0.166656C14.1819 0.166656 17.1667 3.15142 17.1667 6.83332C17.1667 10.5152 14.1819 13.5 10.5 13.5C8.95941 13.5 7.54087 12.9774 6.41196 12.0999ZM10.5 11.8333C13.2614 11.8333 15.5 9.59475 15.5 6.83332C15.5 4.0719 13.2614 1.83332 10.5 1.83332C7.73858 1.83332 5.5 4.0719 5.5 6.83332C5.5 9.59475 7.73858 11.8333 10.5 11.8333Z"
+                  fill="#131313"
+                />
+              </svg>
+              <button
+                style={{
+                  backgroundColor: 'black',
+                  borderRadius: '0.375rem',
+                  padding: '0.4rem',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  strokeWidth: '1',
+        
+                }}
+                aria-label="image search button"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="18px"
+                  viewBox="0 0 24 24"
+                  width="18px"
+                  fill="#ffffff"
+                >
+                  <path d="M18 13v7H4V6h5.02c.05-.71.22-1.38.48-2H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-5l-2-2zm-1.5 5h-11l2.75-3.53 1.96 2.36 2.75-3.54L16.5 18zm2.8-9.11c.44-.7.7-1.51.7-2.39C20 4.01 17.99 2 15.5 2S11 4.01 11 6.5s2.01 4.5 4.49 4.5c.88 0 1.7-.26 2.39-.7L21 13.42 22.42 12 19.3 8.89zM15.5 9C14.12 9 13 7.88 13 6.5S14.12 4 15.5 4 18 5.12 18 6.5 16.88 9 15.5 9z"/>
+                </svg>
+              </button>
+            </div>
           </div>
         </label>
 
@@ -132,7 +158,7 @@ const Desktop = ({ navItems, logo, searchbar }: Props) => (
                 x="0"
                 y="0"
                 width="24"
-                height="25"
+                height="24"
               >
                 <rect y="0.5" width="24" height="24" fill="#D9D9D9" />
               </mask>
@@ -160,7 +186,7 @@ const Desktop = ({ navItems, logo, searchbar }: Props) => (
                 x="0"
                 y="0"
                 width="24"
-                height="25"
+                height="24"
               >
                 <rect y="0.5" width="24" height="24" fill="#D9D9D9" />
               </mask>
@@ -189,6 +215,8 @@ const Desktop = ({ navItems, logo, searchbar }: Props) => (
     </div>
   </div>
 );
+
+
 
 const Mobile = ({ logo, searchbar }: Props) => (
   <>
@@ -301,3 +329,5 @@ export default function Section({ variant, ...props }: SectionProps) {
 
   return <Header {...props} />;
 }
+
+
