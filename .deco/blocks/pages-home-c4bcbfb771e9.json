@@ -11,10 +11,10 @@
           "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11551/8b5c9bf8-3844-4c4d-b812-42533ce248ab",
           "alt": "Shoes",
           "action": {
-            "title": "Skate into Adventure",
-            "subTitle": "Top-quality roller skate shoes for all levels. ",
+            "title": "LOREM IPSUM",
+            "subTitle": "O básico é conforto,  estilo e elegância. Encontre tudo isso na nossa coleção de roupas de inverno",
             "href": "/s?q=shoes&page=0",
-            "label": " "
+            "label": "Lorem"
           },
           "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11551/00632b20-dc8f-447d-8179-44185aa6e857"
         },
@@ -68,6 +68,9 @@
           "variantOptions": []
         }
       }
+    },
+    {
+      "__resolveType": "CarouselCategories"
     },
     {
       "__resolveType": "site/sections/Newsletter/Newsletter.tsx",

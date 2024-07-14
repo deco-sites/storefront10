@@ -39,7 +39,9 @@ export default function ProductShelf({ products, title, cta }: Props) {
       class="[view-transition-name:loading-fallback-2] text-primary"
     >
       <Section.Header title={title} cta={cta} />
-      <p>Conforto e estilo na nossa coleção de roupas de inverno</p>
+      <p class="pl-2">
+        Conforto e estilo na nossa coleção de roupas de inverno
+      </p>
 
       <ProductSlider products={products} itemListName={title} />
     </Section.Container>

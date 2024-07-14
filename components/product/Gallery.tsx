@@ -29,7 +29,11 @@ export default function GallerySlider(props: Props) {
     throw new Error("Missing Product Details Page Info");
   }
 
-  const { page: { product: { name, isVariantOf } } } = props;
+  const {
+    page: {
+      product: { name, isVariantOf },
+    },
+  } = props;
 
   // Filter images when image's alt text matches product name
   // More info at: https://community.shopify.com/c/shopify-discussions/i-can-not-add-multiple-pictures-for-my-variants/m-p/2416533
@@ -48,10 +52,7 @@ export default function GallerySlider(props: Props) {
           <div class="relative h-min flex-grow">
             <Slider class="carousel carousel-center gap-6 w-full">
               {images.map((img, index) => (
-                <Slider.Item
-                  index={index}
-                  class="carousel-item w-full"
-                >
+                <Slider.Item index={index} class="carousel-item w-full">
                   <Image
                     class="w-full"
                     sizes="(max-width: 640px) 100vw, 40vw"
@@ -69,21 +70,24 @@ export default function GallerySlider(props: Props) {
             </Slider>
 
             <Slider.PrevButton
-              class="no-animation absolute left-2 top-1/2 btn btn-circle btn-outline disabled:invisible"
+              class="no-animation absolute left-2 top-1/2 btn btn-circle btn-outline disabled:invisible bg-primary"
               disabled
             >
               <Icon id="chevron-right" class="rotate-180" />
             </Slider.PrevButton>
 
             <Slider.NextButton
-              class="no-animation absolute right-2 top-1/2 btn btn-circle btn-outline disabled:invisible"
+              class="no-animation absolute right-2 top-1/2 btn btn-circle btn-outline disabled:invisible bg-primary"
               disabled={images.length < 2}
             >
               <Icon id="chevron-right" />
             </Slider.NextButton>
 
             <div class="absolute top-2 right-2 bg-base-100 rounded-full">
-              <label class="btn btn-ghost hidden sm:inline-flex" for={zoomId}>
+              <label
+                class="btn btn-ghost hidden sm:inline-flex bg-primary"
+                for={zoomId}
+              >
                 <Icon id="pan_zoom" />
               </label>
             </div>
@@ -126,7 +130,7 @@ export default function GallerySlider(props: Props) {
         id={zoomId}
         images={images}
         width={700}
-        height={Math.trunc(700 * HEIGHT / WIDTH)}
+        height={Math.trunc((700 * HEIGHT) / WIDTH)}
       />
     </>
   );

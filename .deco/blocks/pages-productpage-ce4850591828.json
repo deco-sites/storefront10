@@ -25,7 +25,7 @@
     },
     {
       "__resolveType": "site/sections/Product/ProductShelf.tsx",
-      "title": "You may also like",
+      "title": "Você também pode gostar",
       "products": {
         "__resolveType": "shopify/loaders/ProductList.ts",
         "props": {
@@ -42,7 +42,13 @@
       }
     },
     {
-      "__resolveType": "site/sections/Newsletter/Newsletter.tsx"
+      "__resolveType": "site/sections/Newsletter/Newsletter.tsx",
+      "empty": {
+        "title": "Transforme seu estilo!",
+        "description": "Receba nossas novidades sobre coleções e promoções em primeira mão, além de dicas de moda diretamente no seu e-mail. Desbloqueie um mundo de elegância e vantagens imperdíveis com a Decloths"
+      },
+      "label": "Inscreva-se",
+      "placeholder": "Email..."
     },
     {
       "__resolveType": "Footer"

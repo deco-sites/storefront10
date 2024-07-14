@@ -29,14 +29,17 @@ export default function Form({ items }: Props) {
         <input
           as="input"
           type="text"
-          class="input input-bordered join-item w-48"
+          class="input input-bordered join-item w-48 border-primary focus:border-primary"
           placeholder="00000000"
           name="postalCode"
           maxLength={8}
           size={8}
         />
-        <button type="submit" class="btn join-item no-animation">
-          <span class="[.htmx-request_&]:hidden inline">Calculate</span>
+        <button
+          type="submit"
+          class="btn join-item no-animation bg-primary text-base"
+        >
+          <span class="[.htmx-request_&]:hidden inline">Calcular frete</span>
           <span class="[.htmx-request_&]:inline hidden loading loading-spinner loading-xs" />
         </button>
       </form>

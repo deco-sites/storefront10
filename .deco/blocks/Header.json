@@ -5,38 +5,38 @@
     "items": [
       {
         "url": "/",
-        "name": "Home",
+        "name": "HOME",
         "children": [],
         "image": []
       },
       {
         "url": "/new-coll",
-        "name": "New Colection",
+        "name": "Nova Coleção",
         "children": [],
         "image": []
       },
       {
         "url": "/all-prod",
-        "name": "All Products",
+        "name": "Todos os Produtos",
         "children": [],
         "image": []
       },
       {
         "children": [],
-        "name": "Women",
+        "name": "Mulheres",
         "url": "/women",
         "@type": "SiteNavigationElement"
       },
       {
         "children": [],
-        "name": "Men",
+        "name": "Homens",
         "url": "/men",
         "@type": "SiteNavigationElement"
       },
       {
         "children": [],
         "name": "Conjuntos",
-        "url": "/conjuntos",
+        "url": "/sets",
         "@type": "SiteNavigationElement"
       },
       {

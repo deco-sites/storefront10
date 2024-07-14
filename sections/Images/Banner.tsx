@@ -6,6 +6,8 @@ import { clx } from "../../sdk/clx.ts";
 export interface Props {
   title: string;
   description?: HTMLWidget;
+  width?: number;
+  height?: number;
 
   images: {
     mobile: ImageWidget;
@@ -18,10 +20,11 @@ export interface Props {
   };
 }
 
-function Banner({ title, description, images, cta }: Props) {
+function Banner({ title, description, images, cta, width, height }: Props) {
   return (
     <Section.Container>
-      <div class="relative bg-base-200 mx-5 sm:mx-0">
+      {/* mx-5 sm:mx-0 */}
+      <div class="bg-transparent h-full">
         <Picture>
           <Source
             media="(max-width: 640px)"
@@ -32,10 +35,14 @@ function Banner({ title, description, images, cta }: Props) {
           <Source
             media="(min-width: 640px)"
             src={images.desktop}
-            width={1320}
-            height={480}
+            width={width || 1320}
+            height={height || 480}
           />
-          <img src={images.desktop} alt={title} class="w-full object-cover" />
+          <img
+            src={images.desktop}
+            alt={title}
+            class="w-full h-auto object-scale-down"
+          />
         </Picture>
 
         <div

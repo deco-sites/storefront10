@@ -46,15 +46,8 @@ export interface Props {
   interval?: number;
 }
 
-function BannerItem(
-  { image, lcp }: { image: Banner; lcp?: boolean },
-) {
-  const {
-    alt,
-    mobile,
-    desktop,
-    action,
-  } = image;
+function BannerItem({ image, lcp }: { image: Banner; lcp?: boolean }) {
+  const { alt, mobile, desktop, action } = image;
   const params = { promotion_name: image.alt };
 
   const selectPromotionEvent = useSendEvent({
@@ -83,14 +76,12 @@ function BannerItem(
             "sm:left-40 sm:items-start sm:max-w-96",
           )}
         >
-          <span class="text-7xl font-bold text-base-100">
-            {action.title}
-          </span>
+          <span class="text-7xl font-bold text-base-100">{action.title}</span>
           <span class="font-normal text-base text-base-100 pt-4 pb-12">
             {action.subTitle}
           </span>
           <button
-            class="btn btn-primary btn-outline border-0 bg-base-100 min-w-[180px]"
+            class="btn btn-primary rounded-lg btn-outline border-0 bg-base-100 min-w-[180px]"
             aria-label={action.label}
           >
             {action.label}

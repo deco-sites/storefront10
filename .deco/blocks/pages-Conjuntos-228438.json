@@ -1,6 +1,5 @@
 {
-  "name": "Landing Page (Men)",
-  "path": "/men",
+  "__resolveType": "website/pages/Page.tsx",
   "sections": [
     {
       "__resolveType": "Header"
@@ -10,7 +9,8 @@
       "page": {
         "__resolveType": "shopify/loaders/ProductListingPage.ts",
         "count": 12,
-        "query": "men"
+        "collectionName": "All Products",
+        "query": "all"
       },
       "layout": {
         "columns": {
@@ -18,15 +18,15 @@
           "desktop": 4
         },
         "variant": "aside",
-        "pagination": "show-more"
+        "pagination": "pagination"
       },
       "startingPage": 1
     },
     {
       "__resolveType": "site/sections/Newsletter/Newsletter.tsx",
       "empty": {
-        "description": "Receba nossas novidades sobre coleções e promoções em primeira mão, além de dicas de moda diretamente no seu e-mail. Desbloqueie um mundo de elegância e vantagens imperdíveis com a Decloths",
-        "title": "Transforme seu estilo!"
+        "title": "Transforme seu estilo!",
+        "description": "Receba nossas novidades sobre coleções e promoções em primeira mão, além de dicas de moda diretamente no seu e-mail. Desbloqueie um mundo de elegância e vantagens imperdíveis com a Decloths"
       },
       "label": "Inscreva-se",
       "placeholder": "Email..."
@@ -35,8 +35,9 @@
       "__resolveType": "Footer"
     }
   ],
+  "name": "Conjuntos",
+  "path": "/sets",
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx"
-  },
-  "__resolveType": "website/pages/Page.tsx"
+  }
 }

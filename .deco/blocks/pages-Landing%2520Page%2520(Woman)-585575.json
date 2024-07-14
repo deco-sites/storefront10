@@ -23,7 +23,14 @@
       "startingPage": 1
     },
     {
-      "__resolveType": "site/sections/Newsletter/Newsletter.tsx"
+      "__resolveType": "site/sections/Newsletter/Newsletter.tsx",
+      "failed": {},
+      "label": "Inscreva-se",
+      "placeholder": "Email...",
+      "empty": {
+        "title": "Transforme seu estilo!",
+        "description": "Receba nossas novidades sobre coleções e promoções em primeira mão, além de dicas de moda diretamente no seu e-mail. Desbloqueie um mundo de elegância e vantagens imperdíveis com a Decloths"
+      }
     },
     {
       "__resolveType": "Footer"
