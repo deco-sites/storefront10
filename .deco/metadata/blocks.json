@@ -248,5 +248,11 @@
     "path": "/sets",
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Nova%2520Cole%25C3%25A7%25C3%25A3o-688694.json": {
+    "name": "Nova Coleção",
+    "path": "/new-coll",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
   }
 }

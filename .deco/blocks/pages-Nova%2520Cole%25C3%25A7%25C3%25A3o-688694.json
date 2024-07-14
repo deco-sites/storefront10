@@ -1,6 +1,6 @@
 {
-  "name": "Landing Page (Men)",
-  "path": "/men",
+  "name": "Nova Coleção",
+  "path": "/new-coll",
   "sections": [
     {
       "__resolveType": "Header"
@@ -25,8 +25,8 @@
     {
       "__resolveType": "site/sections/Newsletter/Newsletter.tsx",
       "empty": {
-        "description": "Receba nossas novidades sobre coleções e promoções em primeira mão, além de dicas de moda diretamente no seu e-mail. Desbloqueie um mundo de elegância e vantagens imperdíveis com a Decloths",
-        "title": "Transforme seu estilo!"
+        "title": "Transforme seu estilo!",
+        "description": "Receba nossas novidades sobre coleções e promoções em primeira mão, além de dicas de moda diretamente no seu e-mail. Desbloqueie um mundo de elegância e vantagens imperdíveis com a Decloths"
       },
       "label": "Inscreva-se",
       "placeholder": "Email..."

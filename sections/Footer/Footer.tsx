@@ -39,7 +39,8 @@ function Footer({ links = [], policies = [], logo, trademark }: Props) {
             <div>
               <img loading="lazy" src={logo} />
               <p class="w-3/4 mt-10">
-                Your natural candle made for your home and for your wellness.
+                Desbloqueie um mundo de elegância e vantagens imperdíveis com a
+                Decloths.
               </p>
             </div>
           </div>
