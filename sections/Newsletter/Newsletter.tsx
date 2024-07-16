@@ -152,8 +152,8 @@ function Newsletter({
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M0 545L450 599L900 580L900 601L450 601L0 601Z"
-          fill="#131313"
+          d="M0 515L450 599L900 560L900 601L450 601L0 601Z"
+          fill="#000000"
           stroke-linecap="square"
           stroke-linejoin="bevel"
         />

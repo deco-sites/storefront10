@@ -5,7 +5,7 @@ interface Item {
   title: string;
   href: string;
 }
-//
+
 /** @titleBy title */
 interface Link extends Item {
   children: Item[];
@@ -30,19 +30,16 @@ interface Props {
 function Footer({ links = [], policies = [], logo, trademark }: Props) {
   return (
     <footer
-      class="px-5 sm:px-0 mt-0 sm:mt-0"
-      style={{ backgroundColor: "#131313" }}
+      class="relative px-5 sm:px-0 mt-0 sm:mt-0"
+      style={{ backgroundColor: "#000000" }}
     >
-      <div class="container flex flex-col gap-5 sm:gap-10 py-10">
+      <div class="container flex flex-col gap-5 sm:gap-10 py-10 relative z-10">
         <div class="flex justify-between">
           <div class="flex flex-nowrap justify-between gap-2 ml-16">
-            {/* Consider adjusting ml-12 if needed */}
             <div>
               <img loading="lazy" src={logo} />
               <p class="w-3/4 mt-10">
-                {/* Aumentado de ml-12 para ml-24 */}
-                Desbloqueie um mundo de elegância e vantagens imperdíveis com a
-                Decloths.
+                Desbloqueie um mundo de elegância e vantagens imperdíveis com a Decloths.
               </p>
             </div>
           </div>
@@ -55,7 +52,7 @@ function Footer({ links = [], policies = [], logo, trademark }: Props) {
                 </a>
                 <ul class="flex flex-col gap-2">
                   {children.map(({ title, href }) => (
-                    <li>
+                    <li key={href}>
                       <a class="text-sm font-medium text-base-400" href={href}>
                         {title}
                       </a>
@@ -72,7 +69,7 @@ function Footer({ links = [], policies = [], logo, trademark }: Props) {
         <div class="flex justify-between items-center">
           <ul class="flex flex-col sm:flex-row gap-2 sm:gap-4 sm:items-center">
             {policies.map(({ title, href }) => (
-              <li>
+              <li key={href}>
                 <a class="text-xs font-medium ml-12" href={href}>
                   {title}
                 </a>
@@ -85,6 +82,20 @@ function Footer({ links = [], policies = [], logo, trademark }: Props) {
           </div>
         </div>
       </div>
+
+      <div class="absolute inset-0 z-0">
+  <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+    <defs>
+      <linearGradient id="linear-gradient" x1="100%" y1="0%" x2="20%" y2="0%">
+        <stop offset="0%" style="stop-color: #404040; stop-opacity: 0.5;" />
+        <stop offset="100%" style="stop-color: #181818; stop-opacity: 0;" />
+      </linearGradient>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#linear-gradient)" />
+  </svg>
+</div>
+
+
     </footer>
   );
 }
