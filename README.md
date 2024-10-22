@@ -1,6 +1,6 @@
 # Storefront — deco.cx template 
 
-Welcome to your [deco.cx](https://deco.cx) site!
+Check this [Deco site](https://deco-sites-storefront10.deno.dev/)
 
 ## Usage
 
